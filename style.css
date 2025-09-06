@@ -23,9 +23,8 @@ header {
     justify-content: space-between;
     padding: 10px;
     width: 100%;
-    height: 100px;
-    top: 0;
-    left: 0;
+    height:  95px;
+    
     z-index: 1000;
     margin-right: 32px;
 
@@ -48,16 +47,24 @@ header {
     nav {
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin-right: 20px;
         gap: 24px;
+         @media(max-width:700px) {
+            justify-content: center;
+            width: 100%;
+         }
 
         a {
+
+
             text-decoration: none;
             font-weight: 700;
             color: rgb(255, 255, 255);
-            white-space: nowrap;
+            
+
+           
 
             &:hover {
                 color: black;
@@ -204,10 +211,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-     font-size: 15px;
+    font-size: 15px;
     background: #aad4e3;
-    @media(max-width:566px)
-    {
+
+    @media(max-width:566px) {
         flex-direction: column;
         height: 43%;
         justify-content: center;
@@ -225,6 +232,10 @@ header {
 
     H3 {
         width: 30%;
+
+        @media(max-width:501px) {
+            width: 100%;
+        }
 
 
     }
