@@ -32,6 +32,7 @@ header {
     margin-right: 32px;
 
 
+
     img {
         height: 80px;
         width: 80px;
@@ -40,7 +41,7 @@ header {
             cursor: pointer;
         }
 
-    }
+       
 
 
 
@@ -50,12 +51,18 @@ header {
         justify-content: space-between;
         align-items: center;
         margin-right: 20px;
-        gap: 24px;
+        gap: 24px;}
+
 
         a {
             text-decoration: none;
             font-weight: 700;
             color: rgb(255, 255, 255);
+
+          
+
+
+
 
             &:hover {
                 color: black;
@@ -68,10 +75,14 @@ header {
 }
 
 .hero {
-    height: 69vh;
+    height: 66vh;
     position: relative;
     display: flex;
     align-items: center;
+
+    @media(max-width:650PX) {
+        justify-content: center;
+    }
 
     img {
         filter: brightness(58%);
@@ -93,6 +104,9 @@ header {
     padding: 12px;
     font-family: "Lora";
 
+    @media(max-width:645px) {
+        width: 100%;
+    }
 
     h1 {
         font-weight: 700;
@@ -183,17 +197,14 @@ header {
     img {
         width: 95px;
         height: 95px
-       
-         
-       
     }
 
     ;
 
     H3 {
         width: 30%;
-     
-       
+
+
     }
 }
 
@@ -207,7 +218,7 @@ header {
 }
 
 
-footer{
+footer {
     background-color: #021427;
     font-family: "Lato";
     font-size: 13px;
