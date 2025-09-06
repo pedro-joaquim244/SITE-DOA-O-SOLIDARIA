@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: default;
+
 }
 
 body {
@@ -34,6 +36,10 @@ header {
         height: 80px;
         width: 80px;
 
+        &:hover {
+            cursor: pointer;
+        }
+
     }
 
 
@@ -54,14 +60,15 @@ header {
             &:hover {
                 color: black;
                 transition: 0, 3s;
-                text-decoration: underline
+                text-decoration: underline;
+                cursor: pointer
             }
         }
     }
 }
 
 .hero {
-    height: 66vh;
+    height: 69vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -75,6 +82,7 @@ header {
         width: 100%;
     }
 }
+
 .textoHero {
     margin-left: 50px;
     position: absolute;
@@ -84,33 +92,123 @@ header {
     color: white;
     padding: 12px;
     font-family: "Lora";
-   
+
 
     h1 {
         font-weight: 700;
         margin-bottom: 12px;
-        
+
     }
-    p{
+
+    p {
         margin-bottom: 12px;
     }
-    a{
+
+    a {
         margin-bottom: 12px;
     }
-} 
+}
 
 .btn {
 
     display: inline-block;
     padding: 10px 20px;
-    background: rgba(110, 179, 201, 0.6); 
-    color: white; 
-    text-decoration: none; 
-    border-radius: 8px; 
+    background: rgba(110, 179, 201, 0.6);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
     font-weight: bold;
     transition: 0.3s;
 
     &:hover {
         background-color: #1e3a58;
+        cursor: pointer
     }
-  }
+}
+
+
+.cards {
+    background: rgba(110, 179, 201, 0.6);
+    display: flex;
+    font-family: "Lato";
+    flex-direction: column;
+    margin: 50px;
+    width: 35%;
+    padding: 20px;
+    border-radius: 16px;
+    color: white;
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+
+.cardizinho1 {
+
+    text-align: center;
+
+}
+
+.cardizinho2 {
+    text-align: center;
+
+}
+
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fim {
+    background-color: rgba(110, 179, 201, 0.6);
+    font-family: "Lato";
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    align-items: center;
+    background: #aad4e3;
+
+
+    img {
+        width: 130px;
+        height: 130px
+
+         
+       
+    }
+
+    ;
+
+    H3 {
+        width: 30%;
+        margin-top: 28px;
+        text-align: center;
+    }
+}
+
+
+.sesisenai {
+
+    img {
+        width: 165px;
+        height: 140px;
+    }
+}
+
+
+footer{
+    background-color: #021427;
+    font-family: "Lato";
+    font-size: 13px;
+    text-align: center;
+}
