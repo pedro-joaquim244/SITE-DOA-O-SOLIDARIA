@@ -20,7 +20,7 @@ body {
 header {
     background: rgba(110, 179, 201, 0.6);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
     width: 100%;
     height: 100px;
@@ -33,11 +33,12 @@ header {
     img {
         height: 80px;
         width: 80px;
-   
+
         &:hover {
             cursor: pointer;
         }
-         @media(max-width: 700px){
+
+        @media(max-width: 700px) {
             display: none;
         }
     }
@@ -56,7 +57,7 @@ header {
             text-decoration: none;
             font-weight: 700;
             color: rgb(255, 255, 255);
-             white-space: nowrap;
+            white-space: nowrap;
 
             &:hover {
                 color: black;
@@ -74,8 +75,13 @@ header {
     display: flex;
     align-items: center;
 
+    @media(max-width:642px) {
+        justify-content: center;
+
+    }
+
     img {
-       
+
         filter: brightness(58%);
         position: absolute;
         object-fit: cover;
@@ -95,6 +101,9 @@ header {
     padding: 12px;
     font-family: "Lora";
 
+    @media (max-width:640px) {
+        width: 100%;
+    }
 
     h1 {
         font-weight: 700;
@@ -140,6 +149,15 @@ header {
     border-radius: 16px;
     color: white;
 
+    @media(max-width:896px) {
+        width: 70%;
+    }
+
+    @media(max-width:500px) {
+        width: 95%;
+
+    }
+
     img {
         height: 90px;
         width: 90px;
@@ -151,6 +169,8 @@ header {
     display: flex;
     flex-direction: row;
     gap: 32px;
+
+
 }
 
 
@@ -169,33 +189,44 @@ header {
 .card {
     display: flex;
     justify-content: space-evenly;
+
+    @media(max-width:896px) {
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
 
 .fim {
     background-color: rgba(110, 179, 201, 0.6);
-    height: 130px;
+    height: 140px;
     font-family: "Lato";
     display: flex;
-    justify-content: center;
-    gap: 250px;
+    justify-content: space-around;
     align-items: center;
+     font-size: 15px;
     background: #aad4e3;
+    @media(max-width:566px)
+    {
+        flex-direction: column;
+        height: 43%;
+        justify-content: center;
+        gap: 34px;
+    }
 
 
     img {
+
         width: 95px;
         height: 95px
-       
-         
-       
     }
 
     ;
 
     H3 {
         width: 30%;
-     
-       
+
+
     }
 }
 
@@ -209,7 +240,7 @@ header {
 }
 
 
-footer{
+footer {
     background-color: #021427;
     font-family: "Lato";
     font-size: 13px;
