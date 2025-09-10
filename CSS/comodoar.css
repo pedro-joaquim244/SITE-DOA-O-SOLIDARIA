@@ -14,32 +14,46 @@ body {
 }
 
 .logo {
-    margin-left: 85px;
+    margin-left: 15px;
+    height: 70px;
+
+    @media(max-width:600px) {
+        height: 50px;
+        justify-content: center;
+        display: none;
+        align-items: center;
+    }
 }
 
 header {
-    background: rgba(110, 179, 201, 0.6);
+    background: #6eb3c9;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     width: 100%;
     height: 95px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
     margin-right: 32px;
 
+    @media(max-width:600px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
 
     img {
         height: 75px;
         width: 75px;
-    
+
         &:hover {
             cursor: pointer;
         }
 
-        @media(max-width: 700px) {
-            display: none;
-        }
     }
 
 
@@ -53,8 +67,9 @@ header {
         gap: 24px;
 
         @media(max-width:700px) {
-            justify-content: center;
-            width: 100%;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 10px;
         }
 
         a {
@@ -78,7 +93,7 @@ header {
 }
 
 .hero {
-    height: 66vh;
+    height: 88vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -116,24 +131,31 @@ header {
     @media (max-width:1217px) {
         width: 35%;
     }
+
     @media (max-width:1050px) {
         width: 45%;
     }
-     @media (max-width:850px) {
+
+    @media (max-width:850px) {
         width: 50%;
     }
-     @media (max-width:735px) {
+
+    @media (max-width:735px) {
         width: 57%;
     }
+
     @media (max-width:640px) {
         width: 64%;
     }
+
     @media (max-width:579px) {
         width: 80%;
     }
+
     @media (max-width:500px) {
         width: 100%;
     }
+
     h1 {
         font-weight: 700;
         margin-bottom: 12px;
@@ -153,7 +175,7 @@ header {
 
     display: inline-block;
     padding: 10px 20px;
-    background: rgba(110, 179, 201, 0.6);
+    background: rgba(110, 179, 201);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -168,17 +190,17 @@ header {
 
 
 .titulo {
-    color: rgba(110, 179, 201, 0.6);
-    font-family: "Jomhuria", serif;
+    color: rgb(110, 179, 201);
     font-weight: 800;
     text-align: center;
-    font-size: 46px;
+    font-size: 22px;
     margin-top: 32px;
+    text-transform: uppercase;
 }
 
 
 .cards {
-    background: rgba(110, 179, 201, 0.6);
+    background: #6eb3c9;
     display: flex;
     font-family: "Lato";
     flex-direction: column;
@@ -192,7 +214,7 @@ header {
         width: 70%;
     }
 
-    @media(max-width:500px) {
+    @media(max-width:660px) {
         width: 95%;
 
     }
@@ -239,18 +261,19 @@ header {
 }
 
 .fim {
-    background-color: rgba(110, 179, 201, 0.6);
+    background: #6eb3c9;
     height: 140px;
     font-family: "Lato";
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 15px;
-    background: #aad4e3;
+
 
     @media(max-width:566px) {
+        margin-top: 32px;
         flex-direction: column;
-        height: 43%;
+        height: auto;
         justify-content: center;
         gap: 34px;
     }
@@ -258,7 +281,7 @@ header {
 
     img {
 
-        width: 95px;
+        width: 113px;
         height: 95px
     }
 
