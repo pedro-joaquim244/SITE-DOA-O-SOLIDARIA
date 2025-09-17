@@ -187,6 +187,7 @@ font-size: 2.5rem;
     align-items: center;
          
   }
+
 }
 
 .tela {
@@ -197,12 +198,18 @@ font-size: 2.5rem;
   border-radius: 12px;
   padding: 15px;
   gap: 20px;
+  @media (max-width:453px){
+    display: flex;
+    flex-direction: column;
+   }
+}
 
   img{
 font-size: 2.5rem;
   color: white;
   }
-}
+
+
 
 
 
