@@ -33,16 +33,26 @@
 
 <body>
 
-    <header>
-
-        <a href="index.html"> <img class="logo" src="./imagens/siteDoacaosolidaria.png" alt=""></a>
-        <nav>
-            <a href="index.html"> Inicio</a>
-            <a href="como-doar"> Como Doar</a>
-            <a href="ranking.html"> Ranking</a>
-            <a href="sobre o projeto"> Sobre o projeto</a>
-            <a href="Contato"> Contato</a>
-        </nav>
+    
+    <header class="header">
+        <div class="headerContainer">
+            <button id="btnMenu" class="hamburguer">
+                <img src="imagens/menu.png" alt="">
+            </button>
+            <div class="brand">
+                <a href="/"><img src="imagens/NossaLogo.png" alt=""></a>
+            </div>
+            <nav id="menu" class="menu">
+                <button id="MenuClose" class="MenuClose">
+                    <img src="imagens/close.png" alt="">
+                </button>
+                <a href="index.html" class="menulink">Home</a>
+                <a href="como-doar.html" class="menulink">Como doar</a>
+                <a href="ranking.html" class="menulink">Ranking</a>
+                <a href="sobre-nos.html" class="menulink">Sobre o projeto</a>
+                <a href="contato.html" class="menulink">Contato</a>
+            </nav>
+        </div>
     </header>
 
     <section class="hero">
@@ -52,7 +62,7 @@
             <h1>Como doar leite presencialmente</h1>
             <p>Doe pessoalmente e ajude a transformar vidas com um simples gesto de solidariedade.
             </p>
-            <a href="#" class="btn">Quero doar agora</a>
+            <a href="contato.html" class="btn">Aonde Doar?</a>
 
     </section>
     <SECtion class="titulo">
@@ -90,8 +100,8 @@
     <div class="fim">
         <img class="sesisenai" src="./imagens/LogoSesiSenaiPreto.png" alt>
         <H3> “Um litro de leite pode transformar o dia de alguém. Faça parte da mudança.”</H3>
-       <a href="/"> <img src="./imagens/NossaLogo.png" alt="#"></a>
+        <a href="/"> <img id="rodape" src="./imagens/NossaLogo.png" alt="#"></a>
     </div>
     <footer>Feito por: Gotas da vida ©</footer>
-
+    <script src="app.js"></script>
 </body>
