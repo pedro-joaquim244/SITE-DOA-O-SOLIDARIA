@@ -185,6 +185,7 @@ button {
 
 
 .TextoTitulo{
+    padding-top: 20px;
     margin: 40px;
     font-family: "open sans";
     font-weight: 800;

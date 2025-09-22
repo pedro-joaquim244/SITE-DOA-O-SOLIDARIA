@@ -162,6 +162,7 @@ button {
     padding: 48px 20px;
     background: white center/cover no-repeat;
     background-image: url(../imagens/image\ 11.png);
+    filter: brightness(88%);
     height: 600px;
 font-family: "Lora";
 h1{
@@ -170,10 +171,20 @@ h1{
 }
 }
 
+
+.Text-Hero{
+    width: 23%;
+    padding: 8px;
+    h1{
+        margin-bottom: 13px;
+    }
+    
+}
+
 .click {
     display: inline-block;
     padding: 10px 20px;
-    background: rgba(110, 179, 201, 0.6);
+    background: rgba(110, 179, 201);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -184,7 +195,7 @@ h1{
     
 
     &:hover {
-        background-color: #1e3a58;
+        background-color: #1e3a58;  
         cursor: pointer
     }
 }
