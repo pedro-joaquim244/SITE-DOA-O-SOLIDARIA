@@ -203,6 +203,10 @@ font-size: 2.5rem;
     display: flex;
     flex-direction: column;
    }
+   img{
+    height: 233px;
+    width: 256px;
+   }
 }
 
   img{
