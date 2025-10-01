@@ -192,15 +192,16 @@ font-size: 2.5rem;
 }
 
 .tela {
+     width: auto;
   display: flex;
-  width: 800px;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
   text-align: center;
-  align-items: center;
-  background: #6eb3c9; 
+  background: #6eb3c9;
   border-radius: 12px;
-  padding: 12px;
-  gap: 125px;
-  @media (max-width:453px){
+  padding: 15px;
+  gap: 20px;
+  @media (max-width:500px){
     display: flex;
     flex-direction: column;
    }
@@ -220,6 +221,11 @@ font-size: 2.5rem;
 
 
 .info  {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
     h2{
 font-size: 1.2rem;
   margin-bottom: 5px;
