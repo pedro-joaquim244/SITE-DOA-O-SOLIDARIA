@@ -193,12 +193,13 @@ font-size: 2.5rem;
 
 .tela {
   display: flex;
+  width: 800px;
   text-align: center;
   align-items: center;
   background: #6eb3c9; 
   border-radius: 12px;
-  padding: 15px;
-  gap: 20px;
+  padding: 12px;
+  gap: 125px;
   @media (max-width:453px){
     display: flex;
     flex-direction: column;
